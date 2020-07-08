@@ -1566,7 +1566,7 @@ normalizations:
         - start
         - denied
   # AUDIT_ANOM_MAX_DAC - Max DAC failures reached
-  - record_types: AUDIT_ANOM_MAX_DAC
+  - record_types: ANOM_MAX_DAC
     action: max-discretionary-access-control-failures-reached
     ecs:
       kind: alert
@@ -1575,7 +1575,7 @@ normalizations:
       type:
         - info
   # AUDIT_ANOM_MAX_MAC - Max MAC failures reached
-  - record_types: AUDIT_ANOM_MAX_MAC
+  - record_types: ANOM_MAX_MAC
     action: max-mandatory-access-control-failures-reached
     ecs:
       kind: alert
@@ -1584,7 +1584,7 @@ normalizations:
       type:
         - info
   # AUDIT_ANOM_AMTU_FAIL - AMTU failure
-  - record_types: AUDIT_ANOM_AMTU_FAIL
+  - record_types: ANOM_AMTU_FAIL
     action: abstract-machine-test-utility-failure
     ecs:
       kind: alert
@@ -1593,7 +1593,7 @@ normalizations:
       type:
         - info
   # AUDIT_ANOM_RBAC_FAIL - RBAC self test failure
-  - record_types: AUDIT_ANOM_RBAC_FAIL
+  - record_types: ANOM_RBAC_FAIL
     action: rbac-self-test-failure
     ecs:
       kind: alert
@@ -1602,7 +1602,7 @@ normalizations:
       type:
         - info
   # AUDIT_ANOM_CRYPTO_FAIL - Crypto system test failure
-  - record_types: AUDIT_ANOM_CRYPTO_FAIL
+  - record_types: ANOM_CRYPTO_FAIL
     action: crypto-system-test-failure
     ecs:
       kind: alert
@@ -1611,7 +1611,7 @@ normalizations:
       type:
         - info
   # AUDIT_ANOM_MK_EXE - Make an executable
-  - record_types: AUDIT_ANOM_MK_EXE
+  - record_types: ANOM_MK_EXE
     action: made-an-executable
     ecs:
       kind: alert
@@ -1622,7 +1622,7 @@ normalizations:
         - change
         - info
   # AUDIT_ANOM_ACCESS_FS - Access of file or dir
-  - record_types: AUDIT_ANOM_ACCESS_FS
+  - record_types: ANOM_ACCESS_FS
     action: accessed-watched-file-or-directory
     ecs:
       kind: alert
@@ -1633,7 +1633,7 @@ normalizations:
         - access
         - info
   # AUDIT_ANOM_ADD_ACCT - Adding an acct
-  - record_types: AUDIT_ANOM_ADD_ACCT
+  - record_types: ANOM_ADD_ACCT
     action: added-user-account
     ecs:
       kind: alert
@@ -1645,7 +1645,7 @@ normalizations:
         - creation
         - info
   # AUDIT_ANOM_DEL_ACCT - Deleting an acct
-  - record_types: AUDIT_ANOM_DEL_ACCT
+  - record_types: ANOM_DEL_ACCT
     action: deleted-user-account
     ecs:
       kind: alert
@@ -1657,7 +1657,7 @@ normalizations:
         - deletion
         - info
   # AUDIT_ANOM_MOD_ACCT - Changing an acct
-  - record_types: AUDIT_ANOM_MOD_ACCT
+  - record_types: ANOM_MOD_ACCT
     action: modified-user-account
     ecs:
       kind: alert
@@ -1669,7 +1669,7 @@ normalizations:
         - change
         - info
   # AUDIT_ANOM_ROOT_TRANS - User became root
-  - record_types: AUDIT_ANOM_ROOT_TRANS
+  - record_types: ANOM_ROOT_TRANS
     action: user-became-root
     ecs:
       kind: alert
@@ -1680,7 +1680,7 @@ normalizations:
         - start
         - info
   # AUDIT_ANOM_LOGIN_SERVICE - Service acct attempted login
-  - record_types: AUDIT_ANOM_LOGIN_SERVICE
+  - record_types: ANOM_LOGIN_SERVICE
     action: service-account-attempted-login
     ecs:
       kind: alert
